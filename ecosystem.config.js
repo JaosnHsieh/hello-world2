@@ -39,7 +39,7 @@ module.exports = {
       env  : {
         NODE_ENV: 'production'
       },
-      "post-deploy" : "pm2 startOrRestart  ecosystem.config.js --env production",
+      "post-deploy" : "npm install && pm2 startOrRestart  ecosystem.config.js --env production",
 
     }
     // develop : {
